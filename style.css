@@ -1,0 +1,24 @@
+body
+{
+    background-color: bisque;
+}
+
+#score
+{
+    font-size:30px;
+    margin-left: 1000px;
+}
+
+#timer
+{
+    font-size: 30px;
+    margin-right: 1000px;
+}
+
+#sketch_to_be_drawn
+{
+    color: darkblue;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
