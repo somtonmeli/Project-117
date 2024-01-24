@@ -8,3 +8,47 @@ time_check = "";
 drawn_sketch = "";
 holder_answer = "";
 score = 0;
+
+function updateCanvas()
+{
+    background("white");
+}
+
+function setup()
+{
+    canvas = createCanvas(280,280);
+    canvas.center();
+    background("white");
+}
+
+function draw()
+{
+    check_sketch();
+    if(drawn_sketch == sketch)
+    {
+        holder_answer = "set";
+        score ++;
+        document.getElementById("score").innerHTML = "Score" + score;
+    }
+
+}
+
+function check_sketch()
+{
+    timer_counter ++;
+    document.getElementById("time").innerHTML = "Timer" + timer_counter;
+    console.log(timer_counter);
+
+    if(timer_counter>400)
+    {
+        timer_counter = 0;
+        timer_check = "";
+    }
+
+    if(timer_check == "Completed" && holder_answer == "Set")
+    {
+        timer_check = "";
+        holder_answer = "";
+        update_canvas();
+    }
+}
